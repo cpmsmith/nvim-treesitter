@@ -6,3 +6,16 @@ export { foo as bar };
 
 const n = 5 as number;
 //          ^ keyword.operator
+
+class Class {
+    method() {}
+//  ^ method
+    public_field_method = () => {};
+//  ^ method
+    #private_property_method = () => {};
+//  ^ method
+    declare declared_arrow_field: () => void;
+//          ^ method
+    anonymous_function_field = function() {};
+//  ^ method
+}
