@@ -147,6 +147,19 @@
 ;; method signatures
 (method_signature name: (_) @method)
 
+;; methods using property initializers
+(public_field_definition
+  name: (_) @method
+  value: [
+    (arrow_function)
+    (function)
+  ])
+
+(public_field_definition
+  name: (_) @method
+  type: (type_annotation . (function_type)))
+
+
 ;; property signatures
 (property_signature
   name: (property_identifier) @method
